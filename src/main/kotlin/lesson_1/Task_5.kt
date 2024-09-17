@@ -1,7 +1,7 @@
 package org.example.lesson_1
 
 fun main() {
-    val secondsInSpace: Short = 6360
+    val secondsInSpace: Short = 6363
     val hour = secondsInSpace / 3600
     val minute = (secondsInSpace - (hour * 3600)) / 60
     val second = secondsInSpace % 60
