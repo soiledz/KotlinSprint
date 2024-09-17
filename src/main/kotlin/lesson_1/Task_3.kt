@@ -5,12 +5,13 @@ fun main(){
     var hour = 9
     var minute = 7
 
-    println(yearFly)
-    println("0$hour")
-    println("0$minute")
+    val time = String.format("%4d\n%02d\n%02d", yearFly, hour, minute)
+    println(time)
 
     hour = 10
     minute = 55
 
-    print("$hour:$minute")
+    val timeLanding = String.format("%02d:%02d", hour, minute)
+
+    print(timeLanding)
 }
