@@ -1,10 +1,11 @@
 package org.example.lesson_1
 
-fun main(){
-    val seconds: Short = 6480
-    val hour = 1
-    val minute = 48
-    val second = 0
+fun main() {
+    val secondsInSpace: Short = 6360
+    val hour = secondsInSpace / 3600
+    val minute = (secondsInSpace - (hour * 3600)) / 60
+    val second = secondsInSpace % 60
+    val timeInSpace = String.format("%02d:%02d:%02d", hour, minute, second)
 
-    println("0$hour:$minute:0$second")
+    println(timeInSpace)
 }
