@@ -1,15 +1,17 @@
 package org.example.lesson_2
 
 fun main() {
+    val MINUTES_IN_HOUR: Int = 60
+
     val checkOutTimeHours: Int = 9
     val checkOutTimeMinutes: Int = 39
     val travelTime: Int = 457
 
-    val travelHours: Int = travelTime / 60
-    val travelMinutes: Int = travelTime - (travelHours * 60)
+    val travelHours: Int = travelTime / MINUTES_IN_HOUR
+    val travelMinutes: Int = travelTime - (travelHours * MINUTES_IN_HOUR)
 
-    val arrivalHours = ((checkOutTimeMinutes + travelMinutes) / 60) + checkOutTimeHours + travelHours
-    val arrivalMinutes = (checkOutTimeMinutes + travelMinutes) % 60
+    val arrivalHours = ((checkOutTimeMinutes + travelMinutes) / MINUTES_IN_HOUR) + checkOutTimeHours + travelHours
+    val arrivalMinutes = (checkOutTimeMinutes + travelMinutes) % MINUTES_IN_HOUR
 
     val arrivalTime = String.format("%02d:%02d", arrivalHours, arrivalMinutes)
 
