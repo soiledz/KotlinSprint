@@ -8,7 +8,6 @@ fun main() {
     val iron = 11
 
     val bafKoef = baf / PERCENT
-
     val kristalBaf = (kristal * bafKoef).toInt()
     val ironBaf = (iron * bafKoef).toInt()
 
