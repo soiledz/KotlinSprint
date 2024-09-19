@@ -2,7 +2,6 @@ package org.example.lesson_2
 
 fun main() {
     val PERCENT = 100
-
     val initialAmount = 70000.0
     val annualInterestRate = 16.7 / PERCENT
     val years = 20
