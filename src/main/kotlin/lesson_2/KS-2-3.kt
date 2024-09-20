@@ -1,7 +1,8 @@
 package org.example.lesson_2
 
+const val MINUTES_IN_HOUR: Int = 60
+
 fun main() {
-    val MINUTES_IN_HOUR: Int = 60
 
     val checkOutTimeHours: Int = 9
     val checkOutTimeMinutes: Int = 39
