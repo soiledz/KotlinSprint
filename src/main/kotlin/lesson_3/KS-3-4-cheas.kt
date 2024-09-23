@@ -6,6 +6,7 @@ fun main() {
     var moveNumber = 1
 
     var moveString = "$moveFrom-$moveTo;$moveNumber"
+
     println(moveString)
 
     moveFrom = "D2"
@@ -13,5 +14,6 @@ fun main() {
     moveNumber = 2
 
     moveString = "$moveFrom-$moveTo;$moveNumber"
+
     println(moveString)
 }
