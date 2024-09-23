@@ -4,6 +4,7 @@ fun main() {
     var moveFrom = "E2"
     var moveTo = "E4"
     var moveNumber = 1
+
     var moveString = "$moveFrom-$moveTo;$moveNumber"
     println(moveString)
 
