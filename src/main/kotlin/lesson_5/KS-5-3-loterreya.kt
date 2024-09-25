@@ -5,10 +5,10 @@ fun main() {
     val winNumber2 = 17
 
     print("Введите первое число от 0 до 42: ")
-    val number1 = readLine()?.toIntOrNull()
+    val number1 = readln().toIntOrNull()
 
     print("Введите второе число от 0 до 42: ")
-    val number2 = readLine()?.toIntOrNull()
+    val number2 = readln().toIntOrNull()
 
     val isFirstNumberCorrect = (number1 == winNumber1 || number1 == winNumber2)
     val isSecondNumberCorrect = (number2 == winNumber1 || number2 == winNumber2)
