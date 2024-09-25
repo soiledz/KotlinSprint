@@ -4,7 +4,7 @@ const val AGE_OF_MAJORITY = 18
 
 fun main() {
     print("Введите ваш год рождения: ")
-    val birthYear = readLine()?.toIntOrNull()
+    val birthYear = readln().toIntOrNull()
 
     if (birthYear != null) {
         val currentYear = 2024
