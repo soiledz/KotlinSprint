@@ -1,20 +1,26 @@
 package org.example.lesson_4
 
 fun main() {
+    val crewMin = 55
+    val crewMax = 70
+    val box = 50
+    val initialValue = 0
+
+
     print("наличие повреждений корпуса (true/false):")
-    val damage = readLine().toBoolean() == true
+    val damage = readln().toBoolean() == true
 
     print("текущий состав экипажа:")
-    val crewNumber = readLine()?.toInt()?: 0
+    val crewNumber = readln().toInt() - initialValue
 
     print("количество ящиков с провизией на борту:")
-    val boxesNumber = readLine()?.toInt()?: 0
+    val boxesNumber = readln().toInt() - initialValue
 
     print("благоприятность метеоусловий (true/false):")
-    val weather = readLine().toBoolean() == true
+    val weather = readln().toBoolean() == true
 
-    val canSwim = !damage && crewNumber in 55..70 && boxesNumber > 50
-    val canSwimDamage = crewNumber == 70 && weather == true && boxesNumber >= 50
+    val canSwim = !damage && crewNumber in crewMin..crewMax && boxesNumber > box
+    val canSwimDamage = crewNumber == crewMax && weather == true && boxesNumber >= box
 
     val swim = canSwim || canSwimDamage
 
